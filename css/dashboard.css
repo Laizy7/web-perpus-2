@@ -11,11 +11,12 @@
 
 .dashboard-stat-text {
   color: #494949;
-  font-size: 3.5vw;
+  font-size: 3vw;
 }
 
 .dashboard-stat-image {
-  width: 15vw;
+  width: 62px;
+  height: 55px;
 }
 
 .dashboard-input-date {
