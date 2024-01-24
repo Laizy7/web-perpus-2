@@ -21,7 +21,18 @@
 
 .dashboard-input-date {
   text-align: center;
-  width: 15vw !important;
+  width: 19vw !important;
+  height: 4vw !important;
+  font-size: 2.7vw !important;
+}
+
+.dashboard-date-separator {
+  height: 4vw !important;
+}
+
+.dashboard-btn-filter {
+  width: 7vw !important;
+  height: 4vw !important;
   font-size: 2vw !important;
 }
 
@@ -29,6 +40,11 @@
   background-color: white;
   border: 1px solid #cecece;
   border-radius: 5px;
+}
+
+canvas {
+  width: 100% !important;
+  height: 80% !important;
 }
 
 @media (min-width: 576px) {
@@ -54,18 +70,42 @@
 }
 
 @media (min-width: 768px) {
+  .dashboard-stat-count {
+    font-size: 3vw;
+  }
+
   .dashboard-stat-text {
-    font-size: 2.1vw;
+    font-size: 1.8vw;
+  }
+
+  .dashboard-stat-image {
+    width: 55px;
+    height: 48px;
+  }
+
+  .dashboard-input-date {
+    width: 14vw !important;
+    height: 3.5vw !important;
+    font-size: 2vw !important;
+  }
+
+  .dashboard-date-separator {
+    height: 3.5vw !important;
+  }
+
+  .dashboard-btn-filter {
+    height: 3.5vw !important;
+    font-size: 2vw !important;
   }
 }
 
 @media (min-width: 992px) {
   .dashboard-stat-count {
-    font-size: 3.5vw;
+    font-size: 2vw;
   }
 
   .dashboard-stat-text {
-    font-size: 2vw;
+    font-size: 1.2vw;
   }
 
   .dashboard-stat-image {
@@ -73,7 +113,21 @@
   }
 
   .dashboard-input-date {
-    width: 12vw !important;
-    font-size: 1.5vw !important;
+    width: 9vw !important;
+    height: 2.5vw !important;
+    font-size: 1.3vw !important;
+  }
+
+  .dashboard-date-separator {
+    height: 2.5vw !important;
+  }
+
+  .dashboard-btn-filter {
+    height: 2.5vw !important;
+    font-size: 1.3vw !important;
+  }
+
+  canvas {
+    height: 85% !important;
   }
 }
