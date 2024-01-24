@@ -10742,7 +10742,7 @@ fieldset:disabled .btn {
 }
 @media (min-width: 992px) {
   .content {
-    padding: 3rem 3rem 1.5rem;
+    padding: 2rem 3rem 1.5rem 3rem;
   }
 }
 .navbar-nav .dropdown-menu {
