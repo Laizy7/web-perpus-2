@@ -18,7 +18,6 @@
     />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
 
     <link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
@@ -69,11 +68,11 @@
                 <span class="align-middle">Anggota</span>
               </a>
             </li>
-            <li class="sidebar-item logout">
-              <a class="sidebar-link" href="pages-#">
+            <li class="sidebar-item">
+              <div class="sidebar-link logout">
                 <img src="img/icons/logout-icon.svg" alt="" />
                 <span class="align-middle">Logout</span>
-              </a>
+              </div>
             </li>
           </ul>
         </div>
@@ -262,11 +261,110 @@
           </div>
         </main>
         <!-- End Content -->
+
+        <!-- Modal (Alert) Konfirmasi Logout -->
+        <div
+          class="modal fade"
+          id="alert-konfirmasi-logout"
+          tabindex="-1"
+          aria-labelledby=""
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="d-flex flex-row w-100 py-4">
+                  <div
+                    class="d-flex justify-content-center align-items-center logout-img-konfirmasi-box"
+                  >
+                    <img
+                      src="img/icons/confirmation.svg"
+                      class="logout-img-konfirmasi"
+                    />
+                  </div>
+                  <div
+                    class="d-flex flex-column justify-content-center logout-btn-konfirmasi-box"
+                  >
+                    <div
+                      class="logout-text-konfirmasi text-center px-2 mx-auto"
+                    >
+                      Apakah Anda ingin logout?
+                    </div>
+                    <div class="text-center mt-3">
+                      <button
+                        class="btn btn-konfirmasi-tidak me-1"
+                        data-bs-dismiss="modal"
+                      >
+                        Tidak
+                      </button>
+                      <button href="" class="btn btn-konfirmasi-ya ms-1">
+                        Ya
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal (Alert) Logout Sukses -->
+        <div
+          class="modal fade"
+          id="alert-logout-sukses"
+          tabindex="-1"
+          aria-labelledby=""
+          aria-hidden="true"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="w-100 py-4 text-center">
+                  <img
+                    src="img/icons/green-check.svg"
+                    alt=""
+                    class="alert-logout-img"
+                  />
+                  <div class="logout-teks-header">Logout Sukses</div>
+                  <div class="logout-teks-body">Anda Berhasil Logout</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal (Alert) Login Sukses -->
+        <div
+          class="modal fade"
+          id="alert-login-sukses"
+          tabindex="-1"
+          aria-labelledby=""
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="w-100 py-4 text-center">
+                  <img
+                    src="img/icons/green-check.svg"
+                    alt=""
+                    class="alert-logout-img"
+                  />
+                  <div class="logout-teks-header">Login Sukses</div>
+                  <div class="logout-teks-body">Anda berhasil masuk</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- Script -->
     <script src="js/app.js"></script>
+    <script src="js/logout.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
